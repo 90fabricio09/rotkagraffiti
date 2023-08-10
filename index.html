@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 	</head>
 	<body class="is-preload">
 
@@ -23,13 +24,41 @@
 						e grafiteiro autodidata.</h1>
 				</div>
 			</header>
-
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="navlogo"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#sobre">Quem sou?</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#trabalhos">Trabalhos</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Loja
+						</a>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="loja/loja.html#produtos">Camisas</a></li>
+						  <li><a class="dropdown-item" href="loja/loja.html#produtos">Bonés</a></li>
+						</ul>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
 		<!-- Main -->
 			<div id="main">
-
 				<!-- One -->
 					<section id="one">
-						<header class="major">
+						<header class="major" id="sobre">
 							<h2>Rotka, artista e grafiteiro autodidata, nasceu no Chile e desde pequeno já ganhava concursos e medalhas através do desenho.</h2>
 						</header>
 						<p>
@@ -42,9 +71,38 @@
 							Rotka já participou de algumas exposições e diversos projetos e eventos internacionais de street art e graffiti.
 							Segue pintando, estudando e trabalhando para que a essência do graffiti transcenda sempre e continue transformando vidas e pensamentos.</p>
 					</section>
-
 				<!-- Two -->
 					<section id="two">
+						<div id="carouselExample" class="carousel slide">
+							<div class="carousel-inner">
+							  <div class="carousel-item active">
+								<img src="images/01.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="images/02.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="images/03.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="images/04.png" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img src="images/05.png" class="d-block w-100" alt="...">
+							  </div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Next</span>
+							</button>
+						  </div>
+					</section>
+				<!-- Three -->
+					<section id="three">
 						<h2>Meus trabalhos</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
@@ -55,7 +113,7 @@
 								<a href="images/fulls/02.png" class="image fit thumb"><img src="images/thumbs/02.png" alt="" /></a>
 								<h3>Graffiti</h3>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<article class="col-6 col-12-xsmall work-item" id="trabalhos">
 								<a href="images/fulls/03.png" class="image fit thumb"><img src="images/thumbs/03.png" alt="" /></a>
 								<h3>Graffiti</h3>
 							</article>
@@ -73,39 +131,15 @@
 							</article>
 						</div>
 					</section>
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Entrar em contato</h2>
-						<p>Você pode entrar em contato agora mesmo respondendo o formulário abaixo.</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								
-							</div>
-						</div>
-					</section>
-
+					
 			</div>
-
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" class="icon brands bi bi-whatsapp"><span class="label">WhatsApp</span></a></li>
-						<li><a href="#" class="icon brands bi bi-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands bi bi-cart"><span class="label">Comprar</span></a></li>
+						<li><a href="https://wa.me/5511958704503?text=Ol%C3%A1+Rotka%21" class="icon brands bi bi-whatsapp"><span class="label">WhatsApp</span></a></li>
+						<li><a href="https://instagram.com/rotkilla/" class="icon brands bi bi-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="loja/loja.html" class="icon brands bi bi-cart"><span class="label">Comprar</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li><span>Rotka Graffiti</span> &copy; Todos os direitos reservados</li>
