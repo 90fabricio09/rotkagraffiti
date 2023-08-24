@@ -13,6 +13,22 @@ span {
 	color: #cc00ff;
 }
 
+a {
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	border-bottom: dotted 1px;
+	color: #bb49bf;
+	text-decoration: none;
+}
+
+	a:hover {
+		border-bottom-color: transparent;
+		color: #bb49bf !important;
+		text-decoration: none;
+	}
+
 body {
 	-webkit-text-size-adjust: none;
     background: rgb(255,146,171);
